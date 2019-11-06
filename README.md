@@ -14,7 +14,7 @@ For the training part, the CSV also contained a classification type for each veh
 It contains 4 python source code files:
 1) check_classify_alg.py - Perform predictions on several algorithmic models (knn, svm, decision tree, random forst and MLP) using sklearn library, and imutils library (of pyimagesearch).
 2) prepare_data.py - Prepare the DS. It recieves input images (tiff and jpg) and the csv file, and for each vehicle in the image, it crops it according to the coordinates in the csv file, and saves it. It prepares the data for the training stage, and then, saves the small cropped vehicles in a specific folder and the large ones in another. It also prepares the data for the test stage, there it saves all cropped vehicles in the same folder.
-3) create_and_train_cnn.py - The initial stage of creating and training the network. The output is save in json file and H5 file for later.
-4) vehicle_classification.py - The main source code. It runs the classification itself. Loads the previous saved files, and train the network accordingly. It gets an input image(s) and csv file with no known classification, and for each image, creates and save a new classified image, which display around each vehicle a bounding box with different colors: yellow, for small vehicles and blue for large ones.
+3) create_and_train_cnn.py - The initial stage of creating and training the network. The output is saved in a json file and a H5 file for later.
+4) vehicle_classification.py - The main source code. It runs the classification itself. Loads the previous saved files, and trains the network accordingly. It gets an input image(s) and csv file with no known classification, and for each image, creates and saves a new classified image, which display around each vehicle a bounding box with different colors: yellow, for small vehicles and blue for large ones.
 
 I also attached a video file: vehivle_class_alg_run.mp4 - showing the running of the classifier alg.
